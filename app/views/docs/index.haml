@@ -1,0 +1,4 @@
+-@docs.each do |d|
+  %h2= link_to d.title, d 
+  %p= time_ago_in_words(d.created_at)
+  %p= truncate(d.content, length:50)
