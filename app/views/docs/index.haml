@@ -2,3 +2,5 @@
   %h2= link_to d.title, d 
   %p= time_ago_in_words(d.created_at)
   %p= truncate(d.content, length:50)
+
+=link_to "Buat Doc", new_doc_path
